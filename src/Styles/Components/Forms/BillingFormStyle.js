@@ -2,12 +2,13 @@ import styled from "styled-components";
 import { Colors } from "../../Colors";
 
 export const BillingContainer = styled.div`
-  width: 90%;
+  width: 100%;
   margin: auto;
   #select {
     height: 40px;
     display: flex;
     margin: auto;
+    /* margin-left: 5%; */
     width: 710px;
     background-color: #fff;
     border-radius: 10px;
