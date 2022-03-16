@@ -13,14 +13,15 @@ export const AuthInput = styled.input`
 export const InputContainer = styled.div`
   display: flex;
   align-self: center;
-  border-radius: 10px;
   background-color: #fff;
+  border-radius: 10px;
   border: ${(props) =>
     props.border ? props.border : `1px solid ${Colors.purple}`};
   padding-bottom: 2.6%;
   height: 64px;
   position: relative;
-  width: 94%;
+  width: 90%;
+  margin: auto;
 `;
 
 export const InputIcon = styled.div`
@@ -31,7 +32,7 @@ export const InputIcon = styled.div`
 `;
 
 export const AuthInputContainer = styled.div`
-  margin-left: 4%;
+  /* margin-left: 4%; */
   margin-bottom: 2%;
 
   //   background-color: yellow;
@@ -61,4 +62,11 @@ export const SelectInput = styled.select`
   display: flex;
   align-self: center;
   width: 90%;
+`;
+
+export const SelectContainer = styled.select`
+  width: 100%;
+  label {
+    font-size: bold;
+  }
 `;

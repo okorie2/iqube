@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   LightButton,
   MainButton,
@@ -14,6 +15,7 @@ export default function ConfirmPayment() {
           <div>Item Name</div>
           <div>Price</div>
         </div>
+        <br />
         <div className="flex">
           <div>Data science and usability</div>
 
@@ -30,8 +32,11 @@ export default function ConfirmPayment() {
           <div>50,000.00</div>
         </div>
       </ModalContainer>
+
       <BtnFlex>
-        <MainButton type="submit">submit </MainButton>
+        <MainButton type="submit">
+          <Link to="/completed">submit</Link>
+        </MainButton>
         <LightButton>Cancel Payment</LightButton>
       </BtnFlex>
     </>

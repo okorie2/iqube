@@ -1,5 +1,5 @@
 import React from "react";
-import Inputs, { Select } from "./Inputs";
+import Inputs, { SelectInput } from "./Inputs";
 
 export default function FormController(props) {
   const { control, ...rest } = props;
@@ -7,7 +7,7 @@ export default function FormController(props) {
     case "input":
       return <Inputs {...rest} />;
     case "select":
-      return <Select {...rest} />;
+      return <SelectInput {...rest} />;
 
     default:
       return null;

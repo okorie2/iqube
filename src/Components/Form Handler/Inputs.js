@@ -2,9 +2,15 @@ import React from "react";
 import {
   AuthInput,
   AuthInputContainer,
+  Control,
   InputContainer,
-  SelectInput,
+  SelectContainer,
 } from "../../Styles/Components/Forms/Input";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormHelperText from "@mui/material/FormHelperText";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
 
 export default function Inputs(props) {
   const { label, helper, register, required, border, children, ...rest } =
@@ -22,14 +28,26 @@ export default function Inputs(props) {
   );
 }
 
-export function Select(props) {
+export function SelectInput(props) {
   const { label, register, required, children, ...rest } = props;
   return (
-    <div>
-      <label htmlFor={label}> {label}</label>
-      <SelectInput {...register(label, { required })} {...rest}>
-        {children}
-      </SelectInput>
-    </div>
+    <FormControl sx={{ m: 1, minWidth: 120, borderRadius: "10px" }}>
+      <FormHelperText>
+        <b>Without label</b>
+      </FormHelperText>
+
+      <Select
+        displayEmpty
+        inputProps={{ "aria-label": "Without label" }}
+        id="select"
+      >
+        <MenuItem value="">
+          <em>None</em>
+        </MenuItem>
+        <MenuItem value={10}>Ten</MenuItem>
+        <MenuItem value={20}>Twenty</MenuItem>
+        <MenuItem value={30}>Thirty</MenuItem>
+      </Select>
+    </FormControl>
   );
 }

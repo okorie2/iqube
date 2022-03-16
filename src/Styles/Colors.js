@@ -16,7 +16,7 @@ export const Colors = {
   grad3: "linear-gradient(180deg, #27AE60 0%, #1A7641 100%);",
   green: " #219653",
   lightOrange: "#FFEFE0",
-  lightBlue: "#E4F0FF",
+  // lightBlue: "#E4F0FF",
   grey2: "#828282",
   blueMain: "#2F80ED",
 };

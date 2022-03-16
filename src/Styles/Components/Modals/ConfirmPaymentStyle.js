@@ -8,6 +8,7 @@ export const ModalContainer = styled.div`
   color: ${Colors.purple};
   background-color: ${Colors.white};
   margin: auto;
+  margin-top: 4%;
   padding-bottom: 2%;
   hr {
     width: 90%;
@@ -19,25 +20,35 @@ export const ModalContainer = styled.div`
     border-radius: 10px 10px 0px 0px;
     color: ${Colors.white};
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+
     padding: 2%;
+    div {
+      margin: 0 5%;
+    }
   }
   .flex {
     /* border-radius: 16px 10px 0px 0px; */
     display: flex;
-    justify-content: space-around;
-
+    justify-content: space-between;
     padding: 3%;
+    margin-bottom: 1%;
     div {
-      text-align: right;
+      margin: 0 5%;
     }
   }
   .bar {
-    width: 80%;
+    width: 85%;
     margin: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+
     padding: 2%;
 
     border-radius: 5px;
     border: 2px solid ${Colors.lightBlue};
+    div {
+      margin: 0 0%;
+    }
   }
 `;

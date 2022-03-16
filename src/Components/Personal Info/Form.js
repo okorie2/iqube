@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import { useForm } from "react-hook-form";
-import { BtnFlex } from "../../Styles/Components/Forms/PersonalFormStyle";
+import { BtnFlex } from "../../Styles/Components/Forms/BillingFormStyle";
 import {
   LightButton,
   MainButton,

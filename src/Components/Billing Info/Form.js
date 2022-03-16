@@ -5,6 +5,7 @@ import {
   BtnFlex,
   SlctFlex,
   BillingContainer,
+  SlctGrid,
 } from "../../Styles/Components/Forms/BillingFormStyle";
 import {
   LightButton,
@@ -13,7 +14,7 @@ import {
 import { Error } from "../../Styles/Components/Forms/Input";
 import FormController from "../Form Handler/FormController";
 
-export default function PersonalInfoForm() {
+export default function BillingInfoForm() {
   const {
     register,
     handleSubmit,
@@ -49,32 +50,27 @@ export default function PersonalInfoForm() {
           <option value="male">male</option>
           <option value="other">other</option>
         </FormController>
-        <SlctFlex>
+        <SlctGrid>
           <FormController
             control="input"
             defaultValue="test"
-            label="lg"
+            label="card details"
             register={register}
           />
           <FormController
             control="input"
             defaultValue="test"
-            label="lg"
+            label="expiry date"
             type="date"
             register={register}
           />
           <FormController
-            control="select"
+            control="input"
             defaultValue="test"
-            label="state"
+            label="CVV"
             register={register}
-            border={errors.state && "1px solid red"}
-          >
-            <option value="female">female</option>
-            <option value="male">male</option>
-            <option value="other">other</option>
-          </FormController>
-        </SlctFlex>
+          />
+        </SlctGrid>
 
         <BtnFlex>
           <MainButton type="submit">submit </MainButton>
